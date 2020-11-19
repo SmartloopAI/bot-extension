@@ -1,0 +1,32 @@
+{
+  "name": "bot-extension",
+  "version": "1.0.9",
+  "description": "Smartloop Bot Extension Module",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublish": "tsc",
+    "build": "tsc",
+    "test": "tsc -p test/tsconfig.json && mocha test/dist/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SmartloopAI/bot-extension.git"
+  },
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "author": "Recime Inc. <admin@recime.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^8.10.38",
+    "@types/request": "0.0.45",
+    "mocha": "^3.4.2",
+    "typescript": "^2.9.2",
+    "uuid": "^8.3.1"
+  },
+  "private": false,
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
